@@ -31,8 +31,8 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   components: [
-    { path: '~/components/atoms', prefix: 'A' },
-    { path: '~/components/molecules', prefix: 'M' },
-    { path: '~/components/organisms', prefix: 'O' },
+    { path: '~/components/atoms' },
+    { path: '~/components/molecules' },
+    { path: '~/components/organisms' },
   ],
 })

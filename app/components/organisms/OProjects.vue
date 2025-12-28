@@ -4,19 +4,16 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop',
     title: 'New Build Apartments',
     description: 'Complete tape & jointing for 50+ unit residential development',
-    href: '/projects/new-build-apartments',
   },
   {
     image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop',
     title: 'Commercial Office Fit-Out',
     description: 'High-end plasterboard finishing for modern office space',
-    href: '/projects/commercial-office',
   },
   {
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop',
     title: 'Residential Extension',
     description: 'Quality finishing for home extension project',
-    href: '/projects/residential-extension',
   },
 ]
 </script>
@@ -37,12 +34,12 @@ const projects = [
           :image="project.image"
           :title="project.title"
           :description="project.description"
-          :href="project.href"
+          href="/gallery"
         />
       </div>
       
       <div class="projects__cta">
-        <AButton href="/projects" variant="outline" size="lg">
+        <AButton href="/gallery" variant="outline" size="lg">
           View More Projects
           <AIcon name="arrowRight" size="sm" />
         </AButton>
@@ -76,4 +73,3 @@ const projects = [
   }
 }
 </style>
-

@@ -4,11 +4,8 @@ const isMobileMenuOpen = ref(false)
 
 const navLinks = [
   { to: '/', label: 'Home' },
-  { to: '/services/tape-jointing', label: 'Tape & Jointing' },
-  { to: '/services/drylining', label: 'Drylining & Finishing' },
-  { to: '/projects', label: 'Projects' },
-  { to: '/about', label: 'About' },
-  { to: '/faq', label: 'FAQ' },
+  { to: '/services', label: 'Services' },
+  { to: '/gallery', label: 'Gallery' },
   { to: '/contact', label: 'Contact' },
 ]
 
@@ -170,7 +167,7 @@ onUnmounted(() => {
 }
 
 /* Mobile */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .header__nav {
     position: fixed;
     top: 0;
@@ -212,4 +209,3 @@ onUnmounted(() => {
   }
 }
 </style>
-

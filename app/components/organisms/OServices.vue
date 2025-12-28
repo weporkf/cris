@@ -3,32 +3,26 @@ const services = [
   {
     icon: 'tapeJointing',
     title: 'Tape & Jointing',
-    href: '/services/tape-jointing',
   },
   {
     icon: 'plasterboard',
     title: 'Plasterboard Finishing',
-    href: '/services/plasterboard',
   },
   {
     icon: 'dryLining',
     title: 'Drylining Finishing',
-    href: '/services/drylining',
   },
   {
     icon: 'paint',
     title: 'Ready-to-Paint Finishes',
-    href: '/services/ready-to-paint',
   },
   {
     icon: 'commercial',
     title: 'New Build & Commercial Packages',
-    href: '/services/commercial',
   },
   {
     icon: 'repair',
     title: 'Repair & Remedial Works',
-    href: '/services/repair',
   },
 ]
 </script>
@@ -47,8 +41,13 @@ const services = [
           :key="service.title"
           :icon="service.icon"
           :title="service.title"
-          :href="service.href"
         />
+      </div>
+      
+      <div class="services__cta">
+        <AButton href="/services" variant="primary">
+          View All Services
+        </AButton>
       </div>
     </div>
   </section>
@@ -59,6 +58,11 @@ const services = [
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 25px;
+  margin-bottom: 40px;
+}
+
+.services__cta {
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
@@ -80,4 +84,3 @@ const services = [
   }
 }
 </style>
-

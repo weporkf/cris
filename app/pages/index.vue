@@ -14,8 +14,8 @@ useSeoMeta({
     <OProjects />
     <OProcess />
     <OTestimonials />
-    <OFAQ />
-    <OCTA />
+    <OFaq />
+    <OCta />
   </div>
 </template>
 
@@ -24,4 +24,3 @@ useSeoMeta({
   overflow-x: hidden;
 }
 </style>
-

@@ -69,4 +69,3 @@ const faqs = [
   margin-bottom: 15px;
 }
 </style>
-
