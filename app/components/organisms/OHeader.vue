@@ -49,7 +49,7 @@ onUnmounted(() => {
         </nav>
         
         <div class="header__actions">
-          <AButton href="/contact" variant="primary" size="sm">
+          <AButton href="/contact" variant="primary" size="sm" class="header__quote-btn">
             Get a Quote
           </AButton>
           
@@ -57,6 +57,7 @@ onUnmounted(() => {
             class="header__burger" 
             :class="{ 'header__burger--open': isMobileMenuOpen }"
             @click="toggleMobileMenu"
+            type="button"
             aria-label="Toggle menu"
           >
             <span></span>
@@ -119,21 +120,26 @@ onUnmounted(() => {
   display: none;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 5px;
-  width: 28px;
-  height: 28px;
+  width: 44px;
+  height: 44px;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
+  padding: 8px;
+  position: relative;
+  z-index: 1010;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header__burger span {
   display: block;
-  width: 100%;
+  width: 24px;
   height: 2px;
   background-color: var(--text-white);
   transition: all var(--transition-normal);
+  transform-origin: center;
 }
 
 .header__burger--open span:nth-child(1) {
@@ -152,7 +158,7 @@ onUnmounted(() => {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+  z-index: 1001;
 }
 
 /* Transitions */
@@ -174,13 +180,16 @@ onUnmounted(() => {
     right: -300px;
     width: 280px;
     height: 100vh;
+    height: 100dvh;
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
-    padding: 80px 30px 30px;
+    padding: 100px 30px 30px;
     background-color: var(--color-secondary);
     transition: right var(--transition-normal);
     box-shadow: var(--shadow-xl);
+    z-index: 1002;
+    overflow-y: auto;
   }
   
   .header__nav--open {
@@ -191,13 +200,14 @@ onUnmounted(() => {
     width: 100%;
     padding: 15px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.1rem;
   }
   
   .header__burger {
     display: flex;
   }
   
-  .header__actions .btn {
+  .header__quote-btn {
     display: none;
   }
 }
@@ -206,6 +216,10 @@ onUnmounted(() => {
   .header__nav {
     width: 100%;
     right: -100%;
+  }
+  
+  .header__nav--open {
+    right: 0;
   }
 }
 </style>
