@@ -99,7 +99,7 @@ const { sendQuickMessage } = useWhatsApp()
 
 .hero__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   gap: 60px;
   align-items: center;
 }
@@ -191,7 +191,7 @@ const { sendQuickMessage } = useWhatsApp()
 
 .hero__image-wrapper img {
   width: 100%;
-  max-width: 500px;
+  /* max-width: 500px; */
   height: auto;
   border-radius: var(--border-radius-xl);
   box-shadow: var(--shadow-xl);
