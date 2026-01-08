@@ -80,11 +80,11 @@ const whatsappLink = `https://wa.me/${whatsappNumber}`
           <ul class="footer__contact">
             <li>
               <AIcon name="phone" size="sm" />
-              <a href="tel:02201234567">0220 1234 5678</a>
+              <a href="tel:02201234567">+447366122274</a>
             </li>
             <li>
               <AIcon name="email" size="sm" />
-              <a href="mailto:info@pac-construction.co.uk">info@pac-construction.co.uk</a>
+              <a href="pacconstructionsolutions1@gmail.com">pacconstructionsolutions1@gmail.com</a>
             </li>
             <li class="footer__whatsapp">
               <a :href="whatsappLink" target="_blank" rel="noopener">

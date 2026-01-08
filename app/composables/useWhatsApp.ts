@@ -1,5 +1,5 @@
 // WhatsApp номер компании (замени на реальный номер в международном формате без +)
-const WHATSAPP_NUMBER = '66937729232'
+const WHATSAPP_NUMBER = '447366122274'
 
 interface QuoteRequest {
   name: string

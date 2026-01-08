@@ -10,14 +10,14 @@ const contactInfo = [
   {
     icon: 'phone',
     title: 'Phone',
-    value: '0220 1234 5678',
+    value: '+447366122274',
     href: 'tel:02201234567',
   },
   {
     icon: 'email',
     title: 'Email',
-    value: 'info@pac-construction.co.uk',
-    href: 'mailto:info@pac-construction.co.uk',
+    value: 'pacconstructionsolutions1@gmail.com',
+    href: 'pacconstructionsolutions1@gmail.com',
   },
   {
     icon: 'location',
@@ -93,16 +93,8 @@ const quickMessages = [
               <h3 class="contact__hours-title">Working Hours</h3>
               <ul class="contact__hours-list">
                 <li>
-                  <span>Monday - Friday</span>
-                  <span>7:00 AM - 6:00 PM</span>
-                </li>
-                <li>
-                  <span>Saturday</span>
-                  <span>8:00 AM - 4:00 PM</span>
-                </li>
-                <li>
-                  <span>Sunday</span>
-                  <span>Closed</span>
+                  <span>Available 7/7</span>
+                  <span>day&night shifts</span>
                 </li>
               </ul>
             </div>
