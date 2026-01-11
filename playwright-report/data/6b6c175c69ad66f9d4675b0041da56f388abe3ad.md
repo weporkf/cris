@@ -1,0 +1,337 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "P A C Construction Solutions LTD" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e8]:
+            - generic [ref=e9]: P
+            - generic [ref=e10]: A
+            - generic [ref=e11]: C
+          - generic [ref=e12]:
+            - generic [ref=e13]: Construction
+            - generic [ref=e14]: Solutions LTD
+        - navigation [ref=e15]:
+          - link "Home" [ref=e16] [cursor=pointer]:
+            - /url: /
+          - link "Services" [ref=e17] [cursor=pointer]:
+            - /url: /services
+          - link "Gallery" [ref=e18] [cursor=pointer]:
+            - /url: /gallery
+          - link "Contact" [ref=e19] [cursor=pointer]:
+            - /url: /contact
+        - link "Get a Quote" [ref=e21] [cursor=pointer]:
+          - /url: /contact
+    - main [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - heading "Professional Tape & Jointing Services in London" [level=1] [ref=e30]:
+              - text: Professional Tape & Jointing
+              - generic [ref=e31]: Services in London
+            - paragraph [ref=e32]: Expert Plasterboard Finishing for Residential & Commercial Projects
+            - list [ref=e33]:
+              - listitem [ref=e34]:
+                - img [ref=e36]
+                - generic [ref=e38]: Perfectly Smooth Finishes
+              - listitem [ref=e39]:
+                - img [ref=e41]
+                - generic [ref=e43]: Fast & Reliable Turnaround
+              - listitem [ref=e44]:
+                - img [ref=e46]
+                - generic [ref=e48]: Dust-Controlled & Clean Work
+              - listitem [ref=e49]:
+                - img [ref=e51]
+                - generic [ref=e53]: Competitive Pricing
+            - generic [ref=e54]:
+              - link "Get a Free Quote" [ref=e55] [cursor=pointer]:
+                - /url: /contact
+              - link "See Our Work" [ref=e56] [cursor=pointer]:
+                - /url: /gallery
+            - button "Chat on WhatsApp" [ref=e57] [cursor=pointer]:
+              - img [ref=e58]
+              - generic [ref=e60]: Chat on WhatsApp
+            - paragraph [ref=e61]: Serving London & Surrounding Areas
+          - img "Professional plastering work" [ref=e64]
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - heading "Tape & Jointing – What We Do" [level=2] [ref=e69]
+            - paragraph [ref=e70]: Professional plasterboard finishing services for all your residential and commercial needs
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - img [ref=e75]
+              - heading "Tape & Jointing" [level=4] [ref=e77]
+            - generic [ref=e78]:
+              - img [ref=e81]
+              - heading "Plasterboard Finishing" [level=4] [ref=e83]
+            - generic [ref=e84]:
+              - img [ref=e87]
+              - heading "Drylining Finishing" [level=4] [ref=e89]
+            - generic [ref=e90]:
+              - img [ref=e93]
+              - heading "Ready-to-Paint Finishes" [level=4] [ref=e95]
+            - generic [ref=e96]:
+              - img [ref=e99]
+              - heading "New Build & Commercial Packages" [level=4] [ref=e101]
+            - generic [ref=e102]:
+              - img [ref=e105]
+              - heading "Repair & Remedial Works" [level=4] [ref=e107]
+          - link "View All Services" [ref=e109] [cursor=pointer]:
+            - /url: /services
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - heading "Why Choose PAC Construction Solutions LTD?" [level=2] [ref=e113]
+            - paragraph [ref=e114]: We deliver exceptional quality and reliability on every project
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - img [ref=e118]
+              - generic [ref=e120]:
+                - heading "Tape & Jointing Experts" [level=4] [ref=e121]
+                - paragraph [ref=e122]: Specialist tape and jointing contractors with years of experience in quality plasterboard finishing.
+            - generic [ref=e123]:
+              - img [ref=e125]
+              - generic [ref=e127]:
+                - heading "High Quality Finish" [level=4] [ref=e128]
+                - paragraph [ref=e129]: We deliver expert craftsmanship on every project, ensuring perfectly smooth walls and ceilings.
+            - generic [ref=e130]:
+              - img [ref=e132]
+              - generic [ref=e134]:
+                - heading "Fast Turnaround" [level=4] [ref=e135]
+                - paragraph [ref=e136]: Professional team that completes work efficiently without compromising on quality standards.
+            - generic [ref=e137]:
+              - img [ref=e139]
+              - generic [ref=e141]:
+                - heading "Clean & Reliable Service" [level=4] [ref=e142]
+                - paragraph [ref=e143]: We keep our work areas tidy and always meet our deadlines with professional reliability.
+            - generic [ref=e144]:
+              - img [ref=e146]
+              - generic [ref=e148]:
+                - heading "Competitive Prices" [level=4] [ref=e149]
+                - paragraph [ref=e150]: Quality tape & jointing services at fair and transparent pricing for all project sizes.
+            - generic [ref=e151]:
+              - img [ref=e153]
+              - generic [ref=e155]:
+                - heading "Experienced Team" [level=4] [ref=e156]
+                - paragraph [ref=e157]: Skilled professionals with extensive experience in residential and commercial projects.
+        - generic [ref=e160]:
+          - generic [ref=e161]:
+            - img "PAC Construction team at work" [ref=e162]
+            - generic [ref=e163]:
+              - generic [ref=e164]: 10+
+              - generic [ref=e165]: Years Experience
+          - generic [ref=e166]:
+            - heading "About PAC Construction Solutions" [level=2] [ref=e168]
+            - paragraph [ref=e169]: PAC Construction Solutions LTD is a specialist tape and jointing contractor based in London. We provide high-quality plasterboard finishing services for both residential and commercial projects throughout London and the surrounding areas.
+            - paragraph [ref=e170]: Our experienced team takes pride in delivering perfectly smooth walls and ceilings, ready for painting. We use professional-grade materials and time-tested techniques to ensure lasting quality on every project.
+            - list [ref=e171]:
+              - listitem [ref=e172]:
+                - img [ref=e174]
+                - generic [ref=e176]: Specialist tape and jointing contractors
+              - listitem [ref=e177]:
+                - img [ref=e179]
+                - generic [ref=e181]: Over 10 years of industry experience
+              - listitem [ref=e182]:
+                - img [ref=e184]
+                - generic [ref=e186]: Fully insured and certified professionals
+              - listitem [ref=e187]:
+                - img [ref=e189]
+                - generic [ref=e191]: Residential and commercial projects
+              - listitem [ref=e192]:
+                - img [ref=e194]
+                - generic [ref=e196]: Serving London and surrounding areas
+            - link "Learn More About Us" [ref=e197] [cursor=pointer]:
+              - /url: /about
+              - text: Learn More About Us
+              - img [ref=e198]
+        - generic [ref=e201]:
+          - generic [ref=e202]:
+            - heading "Recent Tape & Jointing Projects" [level=2] [ref=e203]
+            - paragraph [ref=e204]: See examples of our quality workmanship across London
+          - generic [ref=e205]:
+            - link "New Build Apartments New Build Apartments Complete tape & jointing for 50+ unit residential development View Project" [ref=e206] [cursor=pointer]:
+              - /url: /gallery
+              - generic [ref=e207]:
+                - img "New Build Apartments" [ref=e208]
+                - img [ref=e210]
+              - generic [ref=e212]:
+                - heading "New Build Apartments" [level=4] [ref=e213]
+                - paragraph [ref=e214]: Complete tape & jointing for 50+ unit residential development
+                - generic [ref=e215]:
+                  - text: View Project
+                  - img [ref=e216]
+            - link "Commercial Office Fit-Out Commercial Office Fit-Out High-end plasterboard finishing for modern office space View Project" [ref=e218] [cursor=pointer]:
+              - /url: /gallery
+              - generic [ref=e219]:
+                - img "Commercial Office Fit-Out" [ref=e220]
+                - img [ref=e222]
+              - generic [ref=e224]:
+                - heading "Commercial Office Fit-Out" [level=4] [ref=e225]
+                - paragraph [ref=e226]: High-end plasterboard finishing for modern office space
+                - generic [ref=e227]:
+                  - text: View Project
+                  - img [ref=e228]
+            - link "Residential Extension Residential Extension Quality finishing for home extension project View Project" [ref=e230] [cursor=pointer]:
+              - /url: /gallery
+              - generic [ref=e231]:
+                - img "Residential Extension" [ref=e232]
+                - img [ref=e234]
+              - generic [ref=e236]:
+                - heading "Residential Extension" [level=4] [ref=e237]
+                - paragraph [ref=e238]: Quality finishing for home extension project
+                - generic [ref=e239]:
+                  - text: View Project
+                  - img [ref=e240]
+          - link "View More Projects" [ref=e243] [cursor=pointer]:
+            - /url: /gallery
+            - text: View More Projects
+            - img [ref=e244]
+        - generic [ref=e247]:
+          - generic [ref=e248]:
+            - heading "Our Simple Process" [level=2] [ref=e249]
+            - paragraph [ref=e250]: From first contact to project completion - we make it easy
+          - generic [ref=e251]:
+            - generic [ref=e253]:
+              - generic [ref=e254]: "1"
+              - generic [ref=e255]: Contact & Free Quote
+            - generic [ref=e256]:
+              - generic [ref=e257]: "2"
+              - generic [ref=e258]: Site Visit / Plans Review
+            - generic [ref=e259]:
+              - generic [ref=e260]: "3"
+              - generic [ref=e261]: Work Scheduled
+            - generic [ref=e262]:
+              - generic [ref=e263]: "4"
+              - generic [ref=e264]: Finish Delivered & Signed Off
+        - generic [ref=e266]:
+          - generic [ref=e267]:
+            - heading "What Our Clients Say" [level=2] [ref=e268]
+            - paragraph [ref=e269]: Trusted by contractors and homeowners across London
+          - generic [ref=e270]:
+            - generic [ref=e271]:
+              - img [ref=e273]
+              - blockquote [ref=e275]: PAC provided top-notch finishes and kept everything on schedule. Highly recommended!
+              - generic [ref=e276]:
+                - generic [ref=e277]: Main Contractor
+                - generic [ref=e278]: London
+            - generic [ref=e279]:
+              - img [ref=e281]
+              - blockquote [ref=e283]: Professional, tidy, and efficient. We'll be using them again.
+              - generic [ref=e284]:
+                - generic [ref=e285]: Homeowner
+                - generic [ref=e286]: North London
+        - generic [ref=e288]:
+          - generic [ref=e289]:
+            - heading "Frequently Asked Questions" [level=2] [ref=e290]
+            - paragraph [ref=e291]: Find answers to common questions about our services
+          - generic [ref=e292]:
+            - button "Do you cover London?" [ref=e294] [cursor=pointer]:
+              - generic [ref=e295]: Do you cover London?
+              - img [ref=e297]
+            - button "Do you do small & big jobs?" [ref=e300] [cursor=pointer]:
+              - generic [ref=e301]: Do you do small & big jobs?
+              - img [ref=e303]
+            - button "Are you insured?" [ref=e306] [cursor=pointer]:
+              - generic [ref=e307]: Are you insured?
+              - img [ref=e309]
+            - button "Do you leave surfaces ready to paint?" [ref=e312] [cursor=pointer]:
+              - generic [ref=e313]: Do you leave surfaces ready to paint?
+              - img [ref=e315]
+          - generic [ref=e317]:
+            - paragraph [ref=e318]: Still have questions?
+            - link "Contact Us" [ref=e319] [cursor=pointer]:
+              - /url: /contact
+        - generic [ref=e324]:
+          - heading "Ready for perfectly smooth walls and ceilings?" [level=2] [ref=e325]
+          - paragraph [ref=e326]: Contact us today for a free tape & jointing quote!
+          - link "Get a Free Quote" [ref=e327] [cursor=pointer]:
+            - /url: /contact
+    - contentinfo [ref=e328]:
+      - generic [ref=e329]:
+        - generic [ref=e330]:
+          - generic [ref=e331]:
+            - link "P A C Construction Solutions LTD" [ref=e332] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e333]:
+                - generic [ref=e334]: P
+                - generic [ref=e335]: A
+                - generic [ref=e336]: C
+              - generic [ref=e337]:
+                - generic [ref=e338]: Construction
+                - generic [ref=e339]: Solutions LTD
+            - paragraph [ref=e340]: Professional tape & jointing contractors providing high-quality plasterboard finishing services across London.
+            - generic [ref=e341]:
+              - link "WhatsApp" [ref=e342] [cursor=pointer]:
+                - /url: https://wa.me/447123456789
+                - img [ref=e343]
+              - link "Facebook" [ref=e345] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e346]
+              - link "Twitter" [ref=e348] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e349]
+              - link "LinkedIn" [ref=e351] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e352]
+              - link "YouTube" [ref=e354] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e355]
+          - generic [ref=e357]:
+            - heading "Quick Links" [level=4] [ref=e358]
+            - list [ref=e359]:
+              - listitem [ref=e360]:
+                - link "Home" [ref=e361] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e362]:
+                - link "Services" [ref=e363] [cursor=pointer]:
+                  - /url: /services
+              - listitem [ref=e364]:
+                - link "Gallery" [ref=e365] [cursor=pointer]:
+                  - /url: /gallery
+              - listitem [ref=e366]:
+                - link "Contact" [ref=e367] [cursor=pointer]:
+                  - /url: /contact
+          - generic [ref=e368]:
+            - heading "Contact Us" [level=4] [ref=e369]
+            - list [ref=e370]:
+              - listitem [ref=e371]:
+                - img [ref=e372]
+                - link "+447366122274" [ref=e374] [cursor=pointer]:
+                  - /url: tel:02201234567
+              - listitem [ref=e375]:
+                - img [ref=e376]
+                - generic [ref=e378]: pacconstructionsolutions1@gmail.com
+              - listitem [ref=e379]:
+                - link "Chat on WhatsApp" [ref=e380] [cursor=pointer]:
+                  - /url: https://wa.me/447123456789
+                  - img [ref=e381]
+                  - text: Chat on WhatsApp
+          - generic [ref=e383]:
+            - heading "Service Areas" [level=4] [ref=e384]
+            - list [ref=e385]:
+              - listitem [ref=e386]: London •
+              - listitem [ref=e387]: North London •
+              - listitem [ref=e388]: East London •
+              - listitem [ref=e389]: South London •
+              - listitem [ref=e390]: Essex •
+              - listitem [ref=e391]: Hertfordshire
+        - paragraph [ref=e393]: © 2026 PAC Construction Solutions LTD. All rights reserved.
+  - generic:
+    - img
+  - generic:
+    - generic:
+      - generic:
+        - button "Go to parent" [disabled]
+        - button "Open in editor"
+        - button "Close"
+  - generic [ref=e394]:
+    - button "Toggle Nuxt DevTools" [ref=e395] [cursor=pointer]:
+      - img [ref=e396]
+    - generic "Page load time" [ref=e399]:
+      - generic [ref=e400]: "181"
+      - generic [ref=e401]: ms
+    - button "Toggle Component Inspector" [ref=e403] [cursor=pointer]:
+      - img [ref=e404]
+```

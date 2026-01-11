@@ -16,13 +16,34 @@ const handleScroll = () => {
 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value
+  // Prevent body scroll when menu is open
+  if (isMobileMenuOpen.value) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = ''
+  }
 }
 
 const closeMobileMenu = () => {
   isMobileMenuOpen.value = false
+  document.body.style.overflow = ''
 }
 
-// Close mobile menu on route change - using watch instead of router.afterEach for proper cleanup
+// Handle navigation with programmatic routing - fixes iOS Safari issues
+const handleNavClick = async (e: Event, to: string) => {
+  e.preventDefault()
+  e.stopPropagation()
+  
+  // Close menu immediately
+  closeMobileMenu()
+  
+  // Navigate programmatically - more reliable on iOS
+  if (route.path !== to) {
+    await navigateTo(to)
+  }
+}
+
+// Also close on route change as backup
 watch(() => route.path, () => {
   closeMobileMenu()
 })
@@ -34,6 +55,7 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
+  document.body.style.overflow = ''
 })
 </script>
 
@@ -44,13 +66,17 @@ onUnmounted(() => {
         <ALogo variant="light" />
         
         <nav class="header__nav" :class="{ 'header__nav--open': isMobileMenuOpen }">
-          <MNavLink 
+          <a
             v-for="link in navLinks" 
             :key="link.to" 
-            :to="link.to"
+            :href="link.to"
+            class="header__nav-link"
+            :class="{ 'header__nav-link--active': route.path === link.to }"
+            @click="handleNavClick($event, link.to)"
+            @touchend="handleNavClick($event, link.to)"
           >
             {{ link.label }}
-          </MNavLink>
+          </a>
         </nav>
         
         <div class="header__actions">
@@ -74,13 +100,11 @@ onUnmounted(() => {
     </div>
     
     <!-- Mobile Menu Overlay -->
-    <Transition name="fade">
-      <div 
-        v-if="isMobileMenuOpen" 
-        class="header__overlay" 
-        @click="closeMobileMenu"
-      ></div>
-    </Transition>
+    <div 
+      v-show="isMobileMenuOpen" 
+      class="header__overlay" 
+      @click="closeMobileMenu"
+    ></div>
   </header>
 </template>
 
@@ -113,6 +137,38 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+
+.header__nav-link {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text-white);
+  text-decoration: none;
+  padding: 8px 0;
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.header__nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width var(--transition-normal);
+}
+
+.header__nav-link:hover,
+.header__nav-link--active {
+  color: var(--color-primary);
+}
+
+.header__nav-link:hover::after,
+.header__nav-link--active::after {
+  width: 100%;
 }
 
 .header__actions {
@@ -164,17 +220,12 @@ onUnmounted(() => {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1001;
-}
-
-/* Transitions */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity var(--transition-normal);
-}
-
-.fade-enter-from,
-.fade-leave-to {
   opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
 }
 
 /* Mobile */
@@ -182,7 +233,7 @@ onUnmounted(() => {
   .header__nav {
     position: fixed;
     top: 0;
-    right: -300px;
+    right: 0;
     width: 280px;
     height: 100vh;
     height: 100dvh;
@@ -191,28 +242,25 @@ onUnmounted(() => {
     gap: 0;
     padding: 100px 30px 30px;
     background-color: var(--color-secondary);
-    transition: right var(--transition-normal), visibility 0s linear var(--transition-normal);
     box-shadow: var(--shadow-xl);
     z-index: 1002;
     overflow-y: auto;
-    pointer-events: none;
-    visibility: hidden;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
   }
   
   .header__nav--open {
-    right: 0;
-    pointer-events: auto;
-    visibility: visible;
-    transition: right var(--transition-normal), visibility 0s linear 0s;
+    transform: translateX(0);
   }
   
-  .header__nav :deep(.nav-link) {
+  .header__nav-link {
     width: 100%;
     padding: 15px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 1.1rem;
-    touch-action: manipulation;
+    display: block;
     -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
   }
   
   .header__burger {
@@ -227,11 +275,6 @@ onUnmounted(() => {
 @media (max-width: 480px) {
   .header__nav {
     width: 100%;
-    right: -100%;
-  }
-  
-  .header__nav--open {
-    right: 0;
   }
 }
 </style>

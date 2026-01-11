@@ -84,7 +84,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}`
             </li>
             <li>
               <AIcon name="email" size="sm" />
-              <a href="pacconstructionsolutions1@gmail.com">pacconstructionsolutions1@gmail.com</a>
+              <span >pacconstructionsolutions1@gmail.com</span>
             </li>
             <li class="footer__whatsapp">
               <a :href="whatsappLink" target="_blank" rel="noopener">
